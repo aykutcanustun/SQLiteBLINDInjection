@@ -18,5 +18,5 @@ To retrieve values inside column, use this one:
 Replace $TABLE_NAME, $COLUMN_NAME with data that you retrieved from privious one!
 ___________________________________________________________________________________________________________
 
-To use the script, you have to set varibles manually:
-I added comments to these lines!
+To use the script, you have to set varibles according to your request's headers, responses etc.
+I added comment to these lines!
