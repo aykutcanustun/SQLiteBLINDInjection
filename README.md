@@ -12,15 +12,11 @@ To retrieve values inside column: <br/>
 ## How To Set Varibles:
 To use the script, you have to set varibles according to your request's header, data and response etc. <br/>
 I marked these lines with comments in main.py! <br/>
-
-Make changes at these lines: 
-![replacements](https://github.com/aykutcanustun/SQLiteBLINDInjection/blob/master/replacements.png)
-
-Replace "username" string with your request's data as below:
-![request](https://github.com/aykutcanustun/SQLiteBLINDInjection/blob/master/request.png)
-
-You have to try this query manually for see what is the reply: <br/>
+Make changes at these lines: <br/>
+![replacements](https://github.com/aykutcanustun/SQLiteBLINDInjection/blob/master/replacements.png) <br/>
+Replace "username" string with your request's data as below: <br/>
+![request](https://github.com/aykutcanustun/SQLiteBLINDInjection/blob/master/request.png) <br/>
+You have to make this request manually to see what is the response: <br/>
 ' or UNICODE(SUBSTR((SELECT name FROM sqlite_master WHERE type='table'),1,1)) < 128 -- <br/>
-Replace "Data Sent!" string according to your manual request's reply:
-
+And replace "Data Sent!" string according to your manual request's reply: <br/>
 ![response](https://github.com/aykutcanustun/SQLiteBLINDInjection/blob/master/response.png)
